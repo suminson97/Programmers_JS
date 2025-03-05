@@ -2,23 +2,22 @@ function solution(numer1, denom1, numer2, denom2) {
     let answer = [];
     let 분자합= numer1*denom2+numer2*denom1
     let 분모합= denom1*denom2
-    let 최대공약수 = gcd(분자합,분모합)
-   if(최대공약수===1){
-       answer.push(분자합,분모합)
-   }else answer.push(분자합/최대공약수,분모합/최대공약수)
+    let 최대공약수 = 최대공약수구하는함수(분자합,분모합)
+    
+    answer.push(분자합/최대공약수,분모합/최대공약수)
     
     
-    function gcd(a,b){
-        
-     let c = 0; 
-  while(b !== 0){ 
-    c = a % b; 
-    a = b; 
-    b = c; 
-  } 
-        return a
+function 최대공약수구하는함수(a,b){
+    let c = 0; 
+    
+     while(b !== 0){ 
+        c = a % b; 
+        a = b; 
+        b = c; 
+        } 
+    
+    return a
 }
-    
     return answer;
 }
 
