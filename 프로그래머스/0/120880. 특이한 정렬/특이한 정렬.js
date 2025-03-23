@@ -45,11 +45,7 @@ function solution(numlist, n) {
         }
   
   
-    console.log(sortNumlist,answer)
     return answer;
 }
 
-// 1.numlist를 정렬후 n의 위치를 찾는다 위치를 찾는 법은 i-1 <n<i+1 인곳을 찾는다  
-// 2.그 지점을 startIdx로 지정해서 오른쪽 순회 왼쪽 순회를 돈다.
-// ex) [1,2,3,5,6] 이고 n 이 4라면 startIdx는 3이 될것이고 첫 비교는 sortNumlist[startIdx-1] 과 sortNumlist[startIdx]
 
